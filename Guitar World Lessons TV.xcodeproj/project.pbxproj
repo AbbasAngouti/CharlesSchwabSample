@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B20118881C03E84700168075 /* BrowseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20118871C03E84700168075 /* BrowseViewController.swift */; };
+		B201188A1C03E87500168075 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20118891C03E87500168075 /* SearchViewController.swift */; };
+		B201188C1C04ECE600168075 /* SearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B201188B1C04ECE600168075 /* SearchCollectionViewController.swift */; };
+		B20A5D861BE3CB2C00225662 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A5D851BE3CB2C00225662 /* AppDelegate.swift */; };
+		B20A5D881BE3CB2C00225662 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A5D871BE3CB2C00225662 /* HomeViewController.swift */; };
+		B20A5D8B1BE3CB2C00225662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A5D891BE3CB2C00225662 /* Main.storyboard */; };
+		B20A5D8D1BE3CB2C00225662 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B20A5D8C1BE3CB2C00225662 /* Assets.xcassets */; };
+		B20A5D981BE3CB2C00225662 /* Guitar_World_Lessons_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A5D971BE3CB2C00225662 /* Guitar_World_Lessons_TVTests.swift */; };
+		B20A5DA91BE3D1C900225662 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20A5DA81BE3D1C900225662 /* InfoViewController.swift */; };
+		B20A5DAB1BE3D20400225662 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20A5DAA1BE3D20400225662 /* Info.storyboard */; };
+		B20F5CDD1BED2A3D002F715F /* MyLibrary.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20F5CDC1BED2A3D002F715F /* MyLibrary.storyboard */; };
+		B20F5CDF1BED2CF9002F715F /* MyLibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20F5CDE1BED2CF9002F715F /* MyLibraryViewController.swift */; };
+		B20F5CE21BED353F002F715F /* UserAuthentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B20F5CE11BED353F002F715F /* UserAuthentication.storyboard */; };
+		B20F5CE41BED5B5E002F715F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20F5CE31BED5B5E002F715F /* LoginViewController.swift */; };
+		B20F5CE61BF11BA1002F715F /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20F5CE51BF11BA1002F715F /* CreateAccountViewController.swift */; };
+		B27F1A5D1BEBC6D60090C35B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F1A5C1BEBC6D60090C35B /* Model.swift */; };
+		B27F1A801BEC1C0D0090C35B /* ProductionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B27F1A7F1BEC1C0D0090C35B /* ProductionCollectionViewCell.swift */; };
+		B2866ADB1BF674350075115B /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2866ADA1BF674350075115B /* ForgotPasswordViewController.swift */; };
+		B286E82A1C10F953002E06DE /* MyLibraryLessonCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286E8291C10F953002E06DE /* MyLibraryLessonCellComposer.swift */; };
+		B286E82C1C11097C002E06DE /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286E82B1C11097C002E06DE /* VideoPlayer.swift */; };
+		B286E82E1C110D75002E06DE /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B286E82D1C110D75002E06DE /* Product.storyboard */; };
+		B286E8351C17599F002E06DE /* ActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B286E8341C17599F002E06DE /* ActivityIndicatorViewController.swift */; };
+		B28CA44A1C0F9EF60020F4AC /* LessonItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28CA4491C0F9EF60020F4AC /* LessonItemCollectionViewCell.swift */; };
+		B2B6B1AF1BFD4B56004FA0BC /* DataItemCellComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1AE1BFD4B56004FA0BC /* DataItemCellComposer.swift */; };
+		B2B6B1B11BFD4BA4004FA0BC /* ProductItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1B01BFD4BA4004FA0BC /* ProductItemCollectionViewCell.swift */; };
+		B2B6B1B61BFD4C0D004FA0BC /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1B31BFD4C0D004FA0BC /* DataItem.swift */; };
+		B2B6B1B71BFD4C0D004FA0BC /* DataItem+ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1B41BFD4C0D004FA0BC /* DataItem+ImageName.swift */; };
+		B2B6B1B81BFD4C0D004FA0BC /* DataItem+SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1B51BFD4C0D004FA0BC /* DataItem+SampleData.swift */; };
+		B2B6B1BF1BFE4398004FA0BC /* Browse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B6B1BE1BFE4398004FA0BC /* Browse.storyboard */; };
+		B2B6B1C51BFE55D3004FA0BC /* GradientMaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1C41BFE55D3004FA0BC /* GradientMaskView.swift */; };
+		B2B6B1CE1BFE866D004FA0BC /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B6B1CD1BFE866D004FA0BC /* Search.storyboard */; };
+		B2B6B1D01BFE97AB004FA0BC /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2B6B1CF1BFE97AB004FA0BC /* Settings.storyboard */; };
+		B2B6B1D21BFE9851004FA0BC /* SettingsSplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1D11BFE9851004FA0BC /* SettingsSplitViewController.swift */; };
+		B2B6B1D41BFE9CA1004FA0BC /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1D31BFE9CA1004FA0BC /* MenuTableViewController.swift */; };
+		B2B6B1D61BFE9CFB004FA0BC /* SettingsMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B6B1D51BFE9CFB004FA0BC /* SettingsMenuViewController.swift */; };
+		B2E917B81BE413C400D93F3B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E917B71BE413C400D93F3B /* Home.storyboard */; };
+		B2E917BA1BE4170900D93F3B /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2E917B91BE4170900D93F3B /* Globals.swift */; };
+		B2EA08171C21E00000EB538D /* SynopsisOrInstructorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EA08161C21E00000EB538D /* SynopsisOrInstructorViewController.swift */; };
+		B2F96CE01BFBD3FE0070FE69 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F96CDF1BFBD3FE0070FE69 /* ProductViewController.swift */; };
+		B2FD52081BFA8F3D00080487 /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD52071BFA8F3D00080487 /* IAPHelper.swift */; };
+		B2FD520A1BFA8FBB00080487 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2FD52091BFA8FBB00080487 /* StoreKit.framework */; };
+		B2FD520D1BFBA91200080487 /* GWIAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2FD520C1BFBA91200080487 /* GWIAPHelper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B20A5D941BE3CB2C00225662 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B20A5D7A1BE3CB2C00225662 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B20A5D811BE3CB2C00225662;
+			remoteInfo = "Guitar World Lessons TV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B20118871C03E84700168075 /* BrowseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowseViewController.swift; sourceTree = "<group>"; };
+		B20118891C03E87500168075 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		B201188B1C04ECE600168075 /* SearchCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchCollectionViewController.swift; sourceTree = "<group>"; };
+		B20A5D821BE3CB2C00225662 /* Guitar World Lessons TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guitar World Lessons TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A5D851BE3CB2C00225662 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B20A5D871BE3CB2C00225662 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = ../HomeViewController.swift; sourceTree = "<group>"; };
+		B20A5D8A1BE3CB2C00225662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B20A5D8C1BE3CB2C00225662 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B20A5D8E1BE3CB2C00225662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20A5D931BE3CB2C00225662 /* Guitar World Lessons TV.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Guitar World Lessons TV.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B20A5D971BE3CB2C00225662 /* Guitar_World_Lessons_TVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guitar_World_Lessons_TVTests.swift; sourceTree = "<group>"; };
+		B20A5D991BE3CB2C00225662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B20A5DA81BE3D1C900225662 /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		B20A5DAA1BE3D20400225662 /* Info.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		B20F5CDC1BED2A3D002F715F /* MyLibrary.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyLibrary.storyboard; sourceTree = "<group>"; };
+		B20F5CDE1BED2CF9002F715F /* MyLibraryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLibraryViewController.swift; sourceTree = "<group>"; };
+		B20F5CE11BED353F002F715F /* UserAuthentication.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserAuthentication.storyboard; sourceTree = "<group>"; };
+		B20F5CE31BED5B5E002F715F /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B20F5CE51BF11BA1002F715F /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		B27F1A5C1BEBC6D60090C35B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		B27F1A7F1BEC1C0D0090C35B /* ProductionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductionCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2866ADA1BF674350075115B /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		B286E8291C10F953002E06DE /* MyLibraryLessonCellComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyLibraryLessonCellComposer.swift; sourceTree = "<group>"; };
+		B286E82B1C11097C002E06DE /* VideoPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		B286E82D1C110D75002E06DE /* Product.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		B286E8341C17599F002E06DE /* ActivityIndicatorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		B28CA4491C0F9EF60020F4AC /* LessonItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2B6B1AE1BFD4B56004FA0BC /* DataItemCellComposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataItemCellComposer.swift; sourceTree = "<group>"; };
+		B2B6B1B01BFD4BA4004FA0BC /* ProductItemCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		B2B6B1B31BFD4C0D004FA0BC /* DataItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
+		B2B6B1B41BFD4C0D004FA0BC /* DataItem+ImageName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataItem+ImageName.swift"; sourceTree = "<group>"; };
+		B2B6B1B51BFD4C0D004FA0BC /* DataItem+SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DataItem+SampleData.swift"; sourceTree = "<group>"; };
+		B2B6B1BE1BFE4398004FA0BC /* Browse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Browse.storyboard; sourceTree = "<group>"; };
+		B2B6B1C41BFE55D3004FA0BC /* GradientMaskView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientMaskView.swift; sourceTree = "<group>"; };
+		B2B6B1CD1BFE866D004FA0BC /* Search.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		B2B6B1CF1BFE97AB004FA0BC /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		B2B6B1D11BFE9851004FA0BC /* SettingsSplitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsSplitViewController.swift; sourceTree = "<group>"; };
+		B2B6B1D31BFE9CA1004FA0BC /* MenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		B2B6B1D51BFE9CFB004FA0BC /* SettingsMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsMenuViewController.swift; sourceTree = "<group>"; };
+		B2E917B71BE413C400D93F3B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		B2E917B91BE4170900D93F3B /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Globals.swift; path = "Guitar World Lessons TV/Globals/Globals.swift"; sourceTree = SOURCE_ROOT; };
+		B2EA08161C21E00000EB538D /* SynopsisOrInstructorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SynopsisOrInstructorViewController.swift; sourceTree = "<group>"; };
+		B2F96CDF1BFBD3FE0070FE69 /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		B2FD52071BFA8F3D00080487 /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
+		B2FD52091BFA8FBB00080487 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		B2FD520C1BFBA91200080487 /* GWIAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GWIAPHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B20A5D7F1BE3CB2C00225662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2FD520A1BFA8FBB00080487 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A5D901BE3CB2C00225662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B20A5D791BE3CB2C00225662 = {
+			isa = PBXGroup;
+			children = (
+				B20A5D841BE3CB2C00225662 /* Guitar World Lessons TV */,
+				B20A5D961BE3CB2C00225662 /* Guitar World Tests */,
+				B20A5D831BE3CB2C00225662 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B20A5D831BE3CB2C00225662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B20A5D821BE3CB2C00225662 /* Guitar World Lessons TV.app */,
+				B20A5D931BE3CB2C00225662 /* Guitar World Lessons TV.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B20A5D841BE3CB2C00225662 /* Guitar World Lessons TV */ = {
+			isa = PBXGroup;
+			children = (
+				B286E82F1C175736002E06DE /* ActivityIndicator */,
+				B2B6B1B21BFD4BDC004FA0BC /* Data items */,
+				B2B6B1AD1BFD4B27004FA0BC /* View */,
+				B2FD520E1BFBB50600080487 /* Product Page */,
+				B2FD52061BFA8EA200080487 /* In App Purchase */,
+				B20F5CE01BED3406002F715F /* User Authentication */,
+				B20A5DA21BE3D07900225662 /* Home */,
+				B20A5DA31BE3D09B00225662 /* My Library */,
+				B20A5DA41BE3D0BB00225662 /* Browse */,
+				B20A5DA51BE3D0D100225662 /* Search */,
+				B20A5DA61BE3D0E700225662 /* Settings */,
+				B20A5DA71BE3D14900225662 /* Info */,
+				B27F1A5B1BEBC69A0090C35B /* Model */,
+				B20A5D851BE3CB2C00225662 /* AppDelegate.swift */,
+				B2E917B91BE4170900D93F3B /* Globals.swift */,
+				B286E82B1C11097C002E06DE /* VideoPlayer.swift */,
+				B20A5D891BE3CB2C00225662 /* Main.storyboard */,
+				B20A5D8C1BE3CB2C00225662 /* Assets.xcassets */,
+				B20A5D8E1BE3CB2C00225662 /* Info.plist */,
+				B2FD520B1BFB9AA900080487 /* Frameworks */,
+			);
+			path = "Guitar World Lessons TV";
+			sourceTree = "<group>";
+		};
+		B20A5D961BE3CB2C00225662 /* Guitar World Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B20A5D971BE3CB2C00225662 /* Guitar_World_Lessons_TVTests.swift */,
+				B20A5D991BE3CB2C00225662 /* Info.plist */,
+			);
+			name = "Guitar World Tests";
+			path = "Guitar World Lessons TVTests";
+			sourceTree = "<group>";
+		};
+		B20A5DA21BE3D07900225662 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B20A5D871BE3CB2C00225662 /* HomeViewController.swift */,
+				B2E917B71BE413C400D93F3B /* Home.storyboard */,
+				B27F1A7F1BEC1C0D0090C35B /* ProductionCollectionViewCell.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B20A5DA31BE3D09B00225662 /* My Library */ = {
+			isa = PBXGroup;
+			children = (
+				B20F5CDC1BED2A3D002F715F /* MyLibrary.storyboard */,
+				B20F5CDE1BED2CF9002F715F /* MyLibraryViewController.swift */,
+			);
+			path = "My Library";
+			sourceTree = "<group>";
+		};
+		B20A5DA41BE3D0BB00225662 /* Browse */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6B1BE1BFE4398004FA0BC /* Browse.storyboard */,
+				B20118871C03E84700168075 /* BrowseViewController.swift */,
+			);
+			path = Browse;
+			sourceTree = "<group>";
+		};
+		B20A5DA51BE3D0D100225662 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6B1CD1BFE866D004FA0BC /* Search.storyboard */,
+				B20118891C03E87500168075 /* SearchViewController.swift */,
+				B201188B1C04ECE600168075 /* SearchCollectionViewController.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		B20A5DA61BE3D0E700225662 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6B1D31BFE9CA1004FA0BC /* MenuTableViewController.swift */,
+				B2B6B1D11BFE9851004FA0BC /* SettingsSplitViewController.swift */,
+				B2B6B1CF1BFE97AB004FA0BC /* Settings.storyboard */,
+				B2B6B1D51BFE9CFB004FA0BC /* SettingsMenuViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B20A5DA71BE3D14900225662 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				B20A5DA81BE3D1C900225662 /* InfoViewController.swift */,
+				B20A5DAA1BE3D20400225662 /* Info.storyboard */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		B20F5CE01BED3406002F715F /* User Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				B20F5CE11BED353F002F715F /* UserAuthentication.storyboard */,
+				B20F5CE31BED5B5E002F715F /* LoginViewController.swift */,
+				B20F5CE51BF11BA1002F715F /* CreateAccountViewController.swift */,
+				B2866ADA1BF674350075115B /* ForgotPasswordViewController.swift */,
+			);
+			path = "User Authentication";
+			sourceTree = "<group>";
+		};
+		B27F1A5B1BEBC69A0090C35B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B27F1A5C1BEBC6D60090C35B /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B286E82F1C175736002E06DE /* ActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				B286E8341C17599F002E06DE /* ActivityIndicatorViewController.swift */,
+			);
+			path = ActivityIndicator;
+			sourceTree = "<group>";
+		};
+		B2B6B1AD1BFD4B27004FA0BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6B1C41BFE55D3004FA0BC /* GradientMaskView.swift */,
+				B2B6B1AE1BFD4B56004FA0BC /* DataItemCellComposer.swift */,
+				B2B6B1B01BFD4BA4004FA0BC /* ProductItemCollectionViewCell.swift */,
+				B28CA4491C0F9EF60020F4AC /* LessonItemCollectionViewCell.swift */,
+				B286E8291C10F953002E06DE /* MyLibraryLessonCellComposer.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B2B6B1B21BFD4BDC004FA0BC /* Data items */ = {
+			isa = PBXGroup;
+			children = (
+				B2B6B1B31BFD4C0D004FA0BC /* DataItem.swift */,
+				B2B6B1B41BFD4C0D004FA0BC /* DataItem+ImageName.swift */,
+				B2B6B1B51BFD4C0D004FA0BC /* DataItem+SampleData.swift */,
+			);
+			path = "Data items";
+			sourceTree = "<group>";
+		};
+		B2FD52061BFA8EA200080487 /* In App Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				B2FD52071BFA8F3D00080487 /* IAPHelper.swift */,
+				B2FD520C1BFBA91200080487 /* GWIAPHelper.swift */,
+			);
+			path = "In App Purchase";
+			sourceTree = "<group>";
+		};
+		B2FD520B1BFB9AA900080487 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B2FD52091BFA8FBB00080487 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B2FD520E1BFBB50600080487 /* Product Page */ = {
+			isa = PBXGroup;
+			children = (
+				B2F96CDF1BFBD3FE0070FE69 /* ProductViewController.swift */,
+				B286E82D1C110D75002E06DE /* Product.storyboard */,
+				B2EA08161C21E00000EB538D /* SynopsisOrInstructorViewController.swift */,
+			);
+			path = "Product Page";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B20A5D811BE3CB2C00225662 /* Guitar World Lessons TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A5D9C1BE3CB2C00225662 /* Build configuration list for PBXNativeTarget "Guitar World Lessons TV" */;
+			buildPhases = (
+				B20A5D7E1BE3CB2C00225662 /* Sources */,
+				B20A5D7F1BE3CB2C00225662 /* Frameworks */,
+				B20A5D801BE3CB2C00225662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Guitar World Lessons TV";
+			productName = "Guitar World Lessons TV";
+			productReference = B20A5D821BE3CB2C00225662 /* Guitar World Lessons TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B20A5D921BE3CB2C00225662 /* Guitar World Lessons TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B20A5D9F1BE3CB2C00225662 /* Build configuration list for PBXNativeTarget "Guitar World Lessons TVTests" */;
+			buildPhases = (
+				B20A5D8F1BE3CB2C00225662 /* Sources */,
+				B20A5D901BE3CB2C00225662 /* Frameworks */,
+				B20A5D911BE3CB2C00225662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B20A5D951BE3CB2C00225662 /* PBXTargetDependency */,
+			);
+			name = "Guitar World Lessons TVTests";
+			productName = "Guitar World Lessons TVTests";
+			productReference = B20A5D931BE3CB2C00225662 /* Guitar World Lessons TV.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B20A5D7A1BE3CB2C00225662 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Giant Interactive";
+				TargetAttributes = {
+					B20A5D811BE3CB2C00225662 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = R2QKJ93W42;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					B20A5D921BE3CB2C00225662 = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = B20A5D811BE3CB2C00225662;
+					};
+				};
+			};
+			buildConfigurationList = B20A5D7D1BE3CB2C00225662 /* Build configuration list for PBXProject "Guitar World Lessons TV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B20A5D791BE3CB2C00225662;
+			productRefGroup = B20A5D831BE3CB2C00225662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B20A5D811BE3CB2C00225662 /* Guitar World Lessons TV */,
+				B20A5D921BE3CB2C00225662 /* Guitar World Lessons TVTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B20A5D801BE3CB2C00225662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A5DAB1BE3D20400225662 /* Info.storyboard in Resources */,
+				B20F5CDD1BED2A3D002F715F /* MyLibrary.storyboard in Resources */,
+				B2B6B1BF1BFE4398004FA0BC /* Browse.storyboard in Resources */,
+				B20A5D8D1BE3CB2C00225662 /* Assets.xcassets in Resources */,
+				B20A5D8B1BE3CB2C00225662 /* Main.storyboard in Resources */,
+				B2E917B81BE413C400D93F3B /* Home.storyboard in Resources */,
+				B286E82E1C110D75002E06DE /* Product.storyboard in Resources */,
+				B2B6B1D01BFE97AB004FA0BC /* Settings.storyboard in Resources */,
+				B2B6B1CE1BFE866D004FA0BC /* Search.storyboard in Resources */,
+				B20F5CE21BED353F002F715F /* UserAuthentication.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A5D911BE3CB2C00225662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B20A5D7E1BE3CB2C00225662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2B6B1D61BFE9CFB004FA0BC /* SettingsMenuViewController.swift in Sources */,
+				B2B6B1B11BFD4BA4004FA0BC /* ProductItemCollectionViewCell.swift in Sources */,
+				B2B6B1B71BFD4C0D004FA0BC /* DataItem+ImageName.swift in Sources */,
+				B2F96CE01BFBD3FE0070FE69 /* ProductViewController.swift in Sources */,
+				B2B6B1B61BFD4C0D004FA0BC /* DataItem.swift in Sources */,
+				B2FD52081BFA8F3D00080487 /* IAPHelper.swift in Sources */,
+				B2B6B1D41BFE9CA1004FA0BC /* MenuTableViewController.swift in Sources */,
+				B20F5CDF1BED2CF9002F715F /* MyLibraryViewController.swift in Sources */,
+				B286E82C1C11097C002E06DE /* VideoPlayer.swift in Sources */,
+				B2B6B1D21BFE9851004FA0BC /* SettingsSplitViewController.swift in Sources */,
+				B28CA44A1C0F9EF60020F4AC /* LessonItemCollectionViewCell.swift in Sources */,
+				B27F1A5D1BEBC6D60090C35B /* Model.swift in Sources */,
+				B201188C1C04ECE600168075 /* SearchCollectionViewController.swift in Sources */,
+				B286E8351C17599F002E06DE /* ActivityIndicatorViewController.swift in Sources */,
+				B20A5D881BE3CB2C00225662 /* HomeViewController.swift in Sources */,
+				B27F1A801BEC1C0D0090C35B /* ProductionCollectionViewCell.swift in Sources */,
+				B286E82A1C10F953002E06DE /* MyLibraryLessonCellComposer.swift in Sources */,
+				B20F5CE41BED5B5E002F715F /* LoginViewController.swift in Sources */,
+				B2EA08171C21E00000EB538D /* SynopsisOrInstructorViewController.swift in Sources */,
+				B2B6B1C51BFE55D3004FA0BC /* GradientMaskView.swift in Sources */,
+				B20118881C03E84700168075 /* BrowseViewController.swift in Sources */,
+				B201188A1C03E87500168075 /* SearchViewController.swift in Sources */,
+				B20A5DA91BE3D1C900225662 /* InfoViewController.swift in Sources */,
+				B2866ADB1BF674350075115B /* ForgotPasswordViewController.swift in Sources */,
+				B2B6B1B81BFD4C0D004FA0BC /* DataItem+SampleData.swift in Sources */,
+				B2FD520D1BFBA91200080487 /* GWIAPHelper.swift in Sources */,
+				B20F5CE61BF11BA1002F715F /* CreateAccountViewController.swift in Sources */,
+				B20A5D861BE3CB2C00225662 /* AppDelegate.swift in Sources */,
+				B2B6B1AF1BFD4B56004FA0BC /* DataItemCellComposer.swift in Sources */,
+				B2E917BA1BE4170900D93F3B /* Globals.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B20A5D8F1BE3CB2C00225662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B20A5D981BE3CB2C00225662 /* Guitar_World_Lessons_TVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B20A5D951BE3CB2C00225662 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B20A5D811BE3CB2C00225662 /* Guitar World Lessons TV */;
+			targetProxy = B20A5D941BE3CB2C00225662 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20A5D891BE3CB2C00225662 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20A5D8A1BE3CB2C00225662 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B20A5D9A1BE3CB2C00225662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		B20A5D9B1BE3CB2C00225662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B20A5D9D1BE3CB2C00225662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Guitar World Lessons TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.giant-interactive.guitarworldlessons";
+				PRODUCT_NAME = "Guitar World Lessons TV";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		B20A5D9E1BE3CB2C00225662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Guitar World Lessons TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.giant-interactive.guitarworldlessons";
+				PRODUCT_NAME = "Guitar World Lessons TV";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		B20A5DA01BE3CB2C00225662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Guitar World Lessons TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.giant-interactive.Guitar-World-Lessons-TVTests";
+				PRODUCT_NAME = "Guitar World Lessons TV";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guitar World Lessons TV.app/Guitar World Lessons TV";
+			};
+			name = Debug;
+		};
+		B20A5DA11BE3CB2C00225662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Guitar World Lessons TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.giant-interactive.Guitar-World-Lessons-TVTests";
+				PRODUCT_NAME = "Guitar World Lessons TV";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Guitar World Lessons TV.app/Guitar World Lessons TV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B20A5D7D1BE3CB2C00225662 /* Build configuration list for PBXProject "Guitar World Lessons TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A5D9A1BE3CB2C00225662 /* Debug */,
+				B20A5D9B1BE3CB2C00225662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A5D9C1BE3CB2C00225662 /* Build configuration list for PBXNativeTarget "Guitar World Lessons TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A5D9D1BE3CB2C00225662 /* Debug */,
+				B20A5D9E1BE3CB2C00225662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B20A5D9F1BE3CB2C00225662 /* Build configuration list for PBXNativeTarget "Guitar World Lessons TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B20A5DA01BE3CB2C00225662 /* Debug */,
+				B20A5DA11BE3CB2C00225662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B20A5D7A1BE3CB2C00225662 /* Project object */;
+}

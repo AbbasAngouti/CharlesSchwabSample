@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="xHd-cZ-pA5">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Info-->
+        <scene sceneID="mtP-aZ-Tnm">
+            <objects>
+                <viewController id="xHd-cZ-pA5" customClass="InfoViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hNP-c6-0wo"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hed-Na-9Jb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CMm-1x-eQY">
+                        <rect key="frame" x="0.0" y="140" width="1920" height="940"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YAD-pz-x9f" userLabel="Info Text View">
+                                <rect key="frame" x="20" y="0.0" width="1880" height="932"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YAD-pz-x9f" firstAttribute="leading" secondItem="CMm-1x-eQY" secondAttribute="leadingMargin" id="E74-v9-J40"/>
+                            <constraint firstItem="Hed-Na-9Jb" firstAttribute="top" secondItem="YAD-pz-x9f" secondAttribute="bottom" constant="8" id="WS4-2p-YPd"/>
+                            <constraint firstItem="YAD-pz-x9f" firstAttribute="trailing" secondItem="CMm-1x-eQY" secondAttribute="trailingMargin" id="Xg7-Dk-QnQ"/>
+                            <constraint firstItem="YAD-pz-x9f" firstAttribute="top" secondItem="CMm-1x-eQY" secondAttribute="topMargin" id="b99-AS-ZUw"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <tabBarItem key="tabBarItem" title="Info" id="Ybd-RO-Y48"/>
+                    <simulatedTabBarMetrics key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="infoTextView" destination="YAD-pz-x9f" id="0Cm-rs-IDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xot-aD-mU6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2857" y="4292"/>
+        </scene>
+    </scenes>
+</document>

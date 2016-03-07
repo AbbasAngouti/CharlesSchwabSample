@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="bDx-tm-PPm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="mgZ-Ff-RbK">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bDx-tm-PPm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="iWS-Lk-rmp">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Iqf-lj-zRd" kind="relationship" relationship="viewControllers" id="97F-cP-9Qf"/>
+                        <segue destination="Fkc-K7-8jt" kind="relationship" relationship="viewControllers" id="H02-fW-eLK"/>
+                        <segue destination="prC-y7-Zs9" kind="relationship" relationship="viewControllers" id="AGS-jV-9GZ"/>
+                        <segue destination="CP5-PI-Gjs" kind="relationship" relationship="viewControllers" id="vk0-Ln-vRK"/>
+                        <segue destination="YdV-aB-7ZT" kind="relationship" relationship="viewControllers" id="1Cf-aN-zpw"/>
+                        <segue destination="EZb-oD-ulf" kind="relationship" relationship="viewControllers" id="eb3-x0-Hj7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A9N-Hg-rkv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="1136"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="gdy-Ks-aM2">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" referencedIdentifier="Home" id="Iqf-lj-zRd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="r03-ba-ANn"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nIe-Kl-jwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173" y="772"/>
+        </scene>
+        <!--Info-->
+        <scene sceneID="Pdy-4s-xj9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Info" id="prC-y7-Zs9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="chd-6t-gSU"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Va3-Oj-Ljj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2061" y="1429"/>
+        </scene>
+        <!--MyLibraryStoryBoard-->
+        <scene sceneID="Ed4-DO-dPT">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="MyLibraryStoryBoard" storyboardName="MyLibrary" referencedIdentifier="MyLibraryStoryBoard" id="Fkc-K7-8jt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="jKP-1U-Zwb"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="66d-Mp-912" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2220" y="839"/>
+        </scene>
+        <!--Browse-->
+        <scene sceneID="c5s-AV-xwn">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Browse" storyboardName="Browse" id="CP5-PI-Gjs" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="T03-bS-sKh"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mMG-hp-0HY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2177.5" y="1036"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="9g3-OE-Qmz">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Search" storyboardName="Search" referencedIdentifier="Search" id="YdV-aB-7ZT" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="fC4-O8-461"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2PM-sj-U7d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2176.5" y="936"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="YXz-za-Rk4">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" id="EZb-oD-ulf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="wVO-ef-RyN"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTU-8y-KHv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2173.5" y="1219"/>
+        </scene>
+        <!--Activity Indicator View Controller-->
+        <scene sceneID="CRn-7h-yb0">
+            <objects>
+                <viewController storyboardIdentifier="ActivityIndicatorViewController" id="y6Q-ax-Xf0" customClass="ActivityIndicatorViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="l6L-gp-2Az"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Ju-Hi-EMg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VSj-Dt-5Dx">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpA-Dz-LB0">
+                                <rect key="frame" x="200" y="282" width="1520" height="138"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rsQ-zh-aK7">
+                                <rect key="frame" x="920" y="470" width="80" height="80"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="TgD-jA-sz6">
+                                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="TgD-jA-sz6" firstAttribute="leading" secondItem="rsQ-zh-aK7" secondAttribute="leading" constant="8" id="LpC-7y-zIo"/>
+                                    <constraint firstItem="TgD-jA-sz6" firstAttribute="centerX" secondItem="rsQ-zh-aK7" secondAttribute="centerX" id="bLB-kY-S4F"/>
+                                    <constraint firstItem="TgD-jA-sz6" firstAttribute="centerY" secondItem="rsQ-zh-aK7" secondAttribute="centerY" id="jU1-MZ-VTB"/>
+                                    <constraint firstItem="TgD-jA-sz6" firstAttribute="width" secondItem="rsQ-zh-aK7" secondAttribute="height" multiplier="16:25" constant="12.799999999999997" id="y0g-qk-P8s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Ju-Hi-EMg" firstAttribute="top" secondItem="rsQ-zh-aK7" secondAttribute="bottom" constant="530" id="3vV-UP-auh"/>
+                            <constraint firstItem="rsQ-zh-aK7" firstAttribute="centerX" secondItem="VSj-Dt-5Dx" secondAttribute="centerX" id="BHE-L0-5UR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="TgD-jA-sz6" id="kVR-Yw-BIt"/>
+                        <outlet property="activityIndicatorGrayBackgroundView" destination="rsQ-zh-aK7" id="OeT-Fc-83X"/>
+                        <outlet property="messageLabel" destination="fpA-Dz-LB0" id="awi-mg-MC0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ejG-d0-QdR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2808" y="-373"/>
+        </scene>
+        <!--ProductViewController-->
+        <scene sceneID="m4w-wF-4nR">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="ProductViewController" storyboardName="Product" referencedIdentifier="ProductViewController" id="RQy-zH-cak" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xAn-EL-8nN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="-809"/>
+        </scene>
+    </scenes>
+</document>

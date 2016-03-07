@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="dRR-Ww-9Zm">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Search View Controller-->
+        <scene sceneID="WML-7F-a00">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8p4-j5-mYo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="9SR-Cv-JWY" customClass="SearchViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Fkn-5l-HHB"/>
+                        <viewControllerLayoutGuide type="bottom" id="YAE-FL-yqy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rV9-Si-1Qq">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCb-5G-3RT">
+                                <rect key="frame" x="860" y="483" width="200" height="86"/>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Search"/>
+                                <connections>
+                                    <action selector="showSearchCollectionViewController:" destination="9SR-Cv-JWY" eventType="primaryActionTriggered" id="aUl-KA-dSj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Some info about search functionality" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRm-6M-WqI">
+                                <rect key="frame" x="332" y="202" width="1256" height="252"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="c7g-f0-qGB"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="5013" y="52"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="eqt-Na-llB">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNb-sk-pfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="Search" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="dRR-Ww-9Zm" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Search" id="KVw-g7-Hlj"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gSP-Qb-3sg">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9SR-Cv-JWY" kind="relationship" relationship="rootViewController" id="8nb-aU-AyC"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2881" y="52"/>
+        </scene>
+        <!--Search Collection View Controller-->
+        <scene sceneID="Iay-hJ-qZL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TUo-BJ-IAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <collectionViewController storyboardIdentifier="SearchCollectionViewController" id="PJV-tF-KCO" customClass="SearchCollectionViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="sl5-l5-S9F">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="20" id="Nj5-Ic-Uil">
+                            <size key="itemSize" width="390" height="439"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="120" minY="70" maxX="120" maxY="70"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SearchCell" id="zmf-l8-asG" customClass="ProductItemCollectionViewCell" customModule="Guitar_World_Lessons_TV" customModuleProvider="target">
+                                <rect key="frame" x="120" y="70" width="390" height="439"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="439"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MPg-aN-XnA" userLabel="Background- Gray">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="439"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" adjustsImageWhenAncestorFocused="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XQZ-EK-5tw">
+                                                    <rect key="frame" x="119" y="38" width="167" height="235"/>
+                                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Rock Guitar 101: All the Basic Skillsee You Need to Play Rock Guitar" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ve-Ey-LLv">
+                                                    <rect key="frame" x="10" y="304" width="380" height="58"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Instructor: Andy Aledort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ASp-vS-nku">
+                                                    <rect key="frame" x="10" y="361" width="380" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genre: Beginner" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVC-ke-Mtp">
+                                                    <rect key="frame" x="10" y="387" width="380" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Guitar Type: Electric" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZH-20-ofC">
+                                                    <rect key="frame" x="10" y="413" width="380" height="26"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="backgroundView" destination="MPg-aN-XnA" id="Imq-Hs-lkW"/>
+                                    <outlet property="genreLabel" destination="eVC-ke-Mtp" id="xVp-eQ-Q0B"/>
+                                    <outlet property="guitarTypeLabel" destination="nZH-20-ofC" id="Nrd-gX-49Q"/>
+                                    <outlet property="imageView" destination="XQZ-EK-5tw" id="ODj-Wh-OXV"/>
+                                    <outlet property="instructorLabel" destination="ASp-vS-nku" id="Szq-D2-MI5"/>
+                                    <outlet property="titleLabel" destination="6ve-Ey-LLv" id="i7N-5M-5DX"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="PJV-tF-KCO" id="owC-8x-I2a"/>
+                            <outlet property="delegate" destination="PJV-tF-KCO" id="foT-j8-kXJ"/>
+                        </connections>
+                    </collectionView>
+                    <simulatedTabBarMetrics key="simulatedTopBarMetrics"/>
+                </collectionViewController>
+            </objects>
+            <point key="canvasLocation" x="7037" y="52"/>
+        </scene>
+    </scenes>
+</document>

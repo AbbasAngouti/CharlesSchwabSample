@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pf0-vt-VIv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="5pY-1I-40l">
+            <objects>
+                <navigationController id="Pf0-vt-VIv" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Settings" id="LRt-oJ-J4Y"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="a88-PO-7dP">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c9Y-5G-SxL" kind="relationship" relationship="rootViewController" id="i3E-Wk-ngj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UId-ew-s2w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1878" y="1939"/>
+        </scene>
+        <!--Settings Menu View Controller-->
+        <scene sceneID="T0w-5N-gKE">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="xxq-2o-88n" customClass="SettingsMenuViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="40" sectionFooterHeight="40" id="SIW-eQ-i4O">
+                        <rect key="frame" x="0.0" y="0.0" width="634" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <sections>
+                            <tableViewSection id="CXA-yN-F62">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="IdH-pj-4eX" rowHeight="66" style="IBUITableViewCellStyleDefault" id="pNR-Hd-Yl7">
+                                        <rect key="frame" x="0.0" y="145" width="594" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pNR-Hd-Yl7" id="E4U-db-uFF">
+                                            <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="HELP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IdH-pj-4eX">
+                                                    <rect key="frame" x="20" y="0.0" width="578" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="B34-69-MY1" kind="showDetail" identifier="pushHelp" trigger="accessoryAction" id="oKP-vV-2qv"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="1Gd-D6-39r" rowHeight="66" style="IBUITableViewCellStyleDefault" id="vU7-cS-cTW">
+                                        <rect key="frame" x="0.0" y="225" width="594" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vU7-cS-cTW" id="RC9-bI-r7z">
+                                            <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="LOG IN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Gd-D6-39r">
+                                                    <rect key="frame" x="20" y="0.0" width="578" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="Rtz-kC-TAj" kind="showDetail" identifier="pushLogin" trigger="accessoryAction" id="rTs-8u-UJk"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="eR9-Bn-gTe" rowHeight="66" style="IBUITableViewCellStyleDefault" id="UJO-7s-bao">
+                                        <rect key="frame" x="0.0" y="305" width="594" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UJO-7s-bao" id="Wvi-U8-6dx">
+                                            <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="RECOVER PASSWORD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="eR9-Bn-gTe">
+                                                    <rect key="frame" x="20" y="0.0" width="578" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="F1C-M3-pSI" kind="showDetail" identifier="pushRecoverPassword" trigger="accessoryAction" id="iyM-Qm-2r8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="WVd-uz-v3i" rowHeight="66" style="IBUITableViewCellStyleDefault" id="8DR-Wv-KZq">
+                                        <rect key="frame" x="0.0" y="385" width="594" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8DR-Wv-KZq" id="lWR-J9-86C">
+                                            <rect key="frame" x="0.0" y="0.0" width="618" height="66"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="RESTORE YOUR PURCHASES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WVd-uz-v3i">
+                                                    <rect key="frame" x="20" y="0.0" width="578" height="66"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <animations/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="38"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <animations/>
+                                        </tableViewCellContentView>
+                                        <animations/>
+                                        <connections>
+                                            <segue destination="cYH-tv-O1k" kind="showDetail" identifier="pushRestoreYourPurchases" trigger="accessoryAction" id="yD2-35-Kgi"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="xxq-2o-88n" id="EEt-qm-8yc"/>
+                            <outlet property="delegate" destination="xxq-2o-88n" id="pEB-sl-xfm"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="WQ1-QG-3Qy"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vs9-S1-hhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6895" y="1508"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="SUn-nu-ri6">
+            <objects>
+                <viewController id="B34-69-MY1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TsY-7J-oX1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Sr1-UY-g6h"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aL7-qD-ZDI">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tutorial" translatesAutoresizingMaskIntoConstraints="NO" id="JCC-64-Vs6">
+                                <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6m9-rx-Vmi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9617.5" y="-1323"/>
+        </scene>
+        <!--UserAuthentication-->
+        <scene sceneID="q6I-d7-eKW">
+            <objects>
+                <viewControllerPlaceholder storyboardName="UserAuthentication" id="Rtz-kC-TAj" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ceI-sP-YLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7947.5" y="1094"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="qSc-oC-32o">
+            <objects>
+                <viewController id="F1C-M3-pSI" customClass="ForgotPasswordViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5tM-b4-f5N"/>
+                        <viewControllerLayoutGuide type="bottom" id="v85-bo-dpC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pCJ-xU-1W7">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GoP-Ni-nLc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9617.5" y="1026"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="wez-Qd-gNw">
+            <objects>
+                <viewController id="cYH-tv-O1k" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c3k-aT-Wdj"/>
+                        <viewControllerLayoutGuide type="bottom" id="lrS-kr-hoM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dML-lJ-psf">
+                        <rect key="frame" x="0.0" y="0.0" width="1285" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHt-dF-QH2">
+                                <rect key="frame" x="101" y="159" width="1083" height="530"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="You can restore your in-app purchases by ">
+                                        <attributes>
+                                            <font key="NSFont" size="48" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="logging-in">
+                                        <attributes>
+                                            <color key="NSColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="48" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" to the user account associated with those purchases.">
+                                        <attributes>
+                                            <font key="NSFont" size="48" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <animations/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dQC-N8-h7a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9617.5" y="2218"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ey5-dB-SV5">
+            <objects>
+                <navigationController id="EKg-gS-KfJ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8gY-w1-KVY">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xxq-2o-88n" kind="relationship" relationship="rootViewController" id="0vl-7w-WyI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rEB-Rh-Hyb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6043" y="1508"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="qVN-1A-KqN">
+            <objects>
+                <splitViewController id="c9Y-5G-SxL" customClass="SettingsSplitViewController" customModule="Guitar_World_Lessons_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Settings" id="y43-fp-7sN"/>
+                    <connections>
+                        <segue destination="EKg-gS-KfJ" kind="relationship" relationship="masterViewController" id="weu-s1-Br6"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yf7-t3-I1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4090" y="1944"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tutorial" width="540" height="556"/>
+    </resources>
+</document>
